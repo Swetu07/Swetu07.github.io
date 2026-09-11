@@ -1022,3 +1022,349 @@ footer p {
         height: 240px;
     }
 }
+/* =========================================================
+   MOBILE FIX
+========================================================= */
+
+@media (max-width: 900px) {
+
+    /* Prevent horizontal scrolling */
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    #home {
+        width: 100%;
+        min-height: auto;
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+
+    #home .hero-content {
+        width: 100%;
+
+        display: flex !important;
+
+        flex-direction: column-reverse !important;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 40px;
+    }
+
+
+    /* Text */
+
+    #home .hero-text {
+        width: 100%;
+        max-width: 100%;
+
+        text-align: center;
+    }
+
+
+    #home h1 {
+        font-size: clamp(2.8rem, 12vw, 4.5rem);
+
+        line-height: 1.05;
+
+        margin-bottom: 25px;
+    }
+
+
+    #home h2 {
+        max-width: 600px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 1.55rem;
+    }
+
+
+    #home > div > p:nth-of-type(2) {
+        max-width: 600px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 1rem;
+    }
+
+
+    /* =========================
+       PROFILE IMAGE
+    ========================= */
+
+    #home .hero-image {
+        width: 100%;
+
+        flex: none;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+    }
+
+
+    #home .hero-image img {
+        width: 220px;
+        height: 220px;
+
+        max-width: 70vw;
+        max-height: 70vw;
+    }
+
+
+    /* =========================
+       BUTTONS
+    ========================= */
+
+    #home .hero-buttons {
+        justify-content: center;
+
+        align-items: center;
+
+        width: 100%;
+    }
+
+
+    #home .hero-buttons a {
+        width: auto;
+
+        min-width: 180px;
+
+        text-align: center;
+    }
+
+
+    /* =========================
+       SOCIAL LINKS
+    ========================= */
+
+    #home .social-links {
+        justify-content: center;
+
+        width: 100%;
+    }
+
+
+    /* =========================
+       SECTIONS
+    ========================= */
+
+    section {
+        width: 100%;
+
+        padding: 70px 22px;
+    }
+
+
+    section h2 {
+        font-size: 2.2rem;
+    }
+
+
+    /* =========================
+       SKILLS
+    ========================= */
+
+    #skills > article {
+        width: 100%;
+
+        margin-right: 0 !important;
+
+        margin-bottom: 20px;
+
+        min-height: auto;
+    }
+
+
+    /* =========================
+       EXPERIENCE
+    ========================= */
+
+    #experience article {
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 25px;
+    }
+
+
+    /* =========================
+       PROJECTS
+    ========================= */
+
+    #projects article {
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 25px;
+    }
+
+
+    /* =========================
+       EDUCATION
+    ========================= */
+
+    #education article {
+        width: 100%;
+
+        margin-right: 0 !important;
+
+        padding: 25px;
+    }
+
+
+    /* =========================
+       CERTIFICATES
+    ========================= */
+
+    .certificates-grid {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .certificate-card {
+        width: 100%;
+    }
+
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    #contact {
+        width: 100%;
+
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+
+    .contact-links {
+        width: 100%;
+
+        gap: 10px;
+    }
+
+
+    .contact-links a,
+    .contact-button {
+        width: auto;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 500px) {
+
+    #home {
+        padding-top: 55px;
+
+        padding-bottom: 65px;
+    }
+
+
+    #home .hero-content {
+        gap: 30px;
+    }
+
+
+    #home .hero-image img {
+        width: 200px;
+
+        height: 200px;
+    }
+
+
+    #home h1 {
+        font-size: 2.8rem;
+    }
+
+
+    #home h2 {
+        font-size: 1.35rem;
+    }
+
+
+    #home > div > p:nth-of-type(2) {
+        font-size: 0.98rem;
+    }
+
+
+    .hero-buttons {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    #home .hero-buttons a {
+        width: 100%;
+
+        max-width: 280px;
+    }
+
+
+    section {
+        padding: 60px 20px;
+    }
+
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+
+    #skills > article,
+    #experience article,
+    #projects article,
+    #education article {
+        padding: 22px;
+    }
+
+
+    .certificate-info {
+        padding: 20px;
+    }
+
+
+    .contact-links {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .contact-links a,
+    .contact-button {
+        width: 100%;
+
+        text-align: center;
+    }
+
+}
