@@ -965,6 +965,37 @@ footer p {
 
 @media (max-width: 900px) {
 
+    section {
+        padding: 80px 6%;
+    }
+
+    nav {
+        padding: 0 6%;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav ul li:nth-child(n + 6) {
+        display: none;
+    }
+
+    #skills > article,
+    #education article {
+        width: 100%;
+
+        margin-right: 0;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
     .hero-content {
         flex-direction: column-reverse;
 
@@ -989,94 +1020,5 @@ footer p {
     .hero-image img {
         width: 240px;
         height: 240px;
-    }
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 700px) {
-
-    .certificates-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-@media (max-width: 600px) {
-
-    section {
-        padding: 70px 5%;
-    }
-
-    nav {
-        min-height: 65px;
-
-        padding: 0 5%;
-    }
-
-    nav > a {
-        font-size: 1.15rem;
-    }
-
-    nav ul li {
-        display: none;
-    }
-
-    #home {
-        min-height: 85vh;
-    }
-
-    #home h1 {
-        font-size: 3rem;
-    }
-
-    #home h2 {
-        font-size: 1.5rem;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-
-        align-items: flex-start;
-    }
-
-    .hero-buttons a {
-        width: 100%;
-
-        text-align: center;
-    }
-
-    .social-links {
-        gap: 15px;
-    }
-
-    #skills > article,
-    #education article,
-    #experience article,
-    #projects article {
-        padding: 25px;
-    }
-
-    #experience article {
-        border-left: none;
-
-        border-top: 3px solid #7c83ff;
-
-        border-radius: 15px;
-    }
-
-    #contact {
-        text-align: center;
-    }
-
-    .contact-links {
-        justify-content: center;
-    }
-
-    footer {
-        padding: 25px 5%;
     }
 }
