@@ -965,27 +965,30 @@ footer p {
 
 @media (max-width: 900px) {
 
-    section {
-        padding: 80px 6%;
+    .hero-content {
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        gap: 40px;
     }
 
-    nav {
-        padding: 0 6%;
+    .hero-text {
+        max-width: 100%;
     }
 
-    nav ul {
-        gap: 15px;
+    .hero-buttons,
+    .social-links {
+        justify-content: center;
     }
 
-    nav ul li:nth-child(n + 6) {
-        display: none;
+    .hero-image {
+        flex: none;
     }
 
-    #skills > article,
-    #education article {
-        width: 100%;
-
-        margin-right: 0;
+    .hero-image img {
+        width: 240px;
+        height: 240px;
     }
 }
 
