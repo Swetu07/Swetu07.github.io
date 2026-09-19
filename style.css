@@ -136,6 +136,8 @@ nav ul a.active {
 ========================================================= */
 
 .hero-image {
+    position: relative;
+
     flex: 0 0 320px;
 
     display: flex;
@@ -143,6 +145,8 @@ nav ul a.active {
     justify-content: center;
 
     align-items: center;
+
+    perspective: 1000px;
 }
 
 .hero-image img {
@@ -1515,4 +1519,91 @@ footer p {
 
         text-align: center;
     }
+}
+/* =========================================================
+   3D PROFILE IMAGE
+========================================================= */
+
+.hero-image {
+    perspective: 1000px;
+}
+
+.hero-image img {
+    transform-style: preserve-3d;
+
+    will-change: transform;
+
+    transition:
+        transform 0.15s ease-out,
+        box-shadow 0.3s ease;
+}
+
+.hero-image::after {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    background: rgba(109, 124, 255, 0.18);
+
+    filter: blur(45px);
+
+    z-index: -1;
+
+    pointer-events: none;
+}
+/* =========================================================
+   3D PROJECT CARDS
+========================================================= */
+
+#projects article {
+    transform-style: preserve-3d;
+
+    will-change: transform;
+
+    transition:
+        transform 0.15s ease-out,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+#projects {
+    perspective: 1200px;
+}
+
+#projects article:hover {
+    border-color: #6d7cff;
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.3),
+        0 0 25px rgba(109, 124, 255, 0.08);
+}
+/* =========================================================
+   3D CERTIFICATE CARDS
+========================================================= */
+
+#certifications {
+    perspective: 1200px;
+}
+
+.certificate-card {
+    transform-style: preserve-3d;
+
+    will-change: transform;
+
+    transition:
+        transform 0.15s ease-out,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.certificate-card:hover {
+    border-color: #6d7cff;
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.3);
 }
